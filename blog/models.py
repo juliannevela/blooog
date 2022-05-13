@@ -28,6 +28,7 @@ class Author(models.Model):
   username = models.CharField(max_length=50)
   email = models.EmailField(unique=True)
   website = models.URLField()
+  verified = models.BooleanField(default=False)
 
 # Category model
 class Category(models.Model):
